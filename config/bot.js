@@ -67,7 +67,7 @@ export const sendMessage = async (user_id, text) => {
 }
 
 export const sendPhoto = async (user_id, photo, caption) => {
-    await bot.telegram.sendPhoto(user_id, photo, { caption });
+    await bot.telegram.sendPhoto(user_id, photo, { caption }, { parse_mode: "Markdown" });
 }
 
 export default bot;

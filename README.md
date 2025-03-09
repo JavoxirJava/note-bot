@@ -6,7 +6,7 @@ Bu bot foydalanuvchilarga eslatmalar yaratish, yangilash, o'chirish va belgilang
 
 ### 1. Reponi klonlash
 ```sh
-git clone <repo_url>
+git clone git@github.com:JavoxirJava/note-bot.git
 cd note-bot
 ```
 

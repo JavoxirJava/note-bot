@@ -146,7 +146,7 @@ export const getNoteId = async (ctx, callbackData, isEdit = false) => {
     ctx.session.noteId = noteId;
 
     if (isEdit) {
-        await ctx.reply("📜 *Yangi matnni kiriting yoki rasm bilan birga yuboring:*", { parse_mode: "Markdown" });
+        await ctx.editMessageText("📜 *Yangi matnni kiriting yoki rasm bilan birga yuboring:*", { parse_mode: "Markdown" });
         ctx.session.step = "waiting_for_new_text";
     } else await ctx.editMessageText("⚠️ *Eslatmani o‘chirishni tasdiqlaysizmi?*", {
         parse_mode: "Markdown",

@@ -20,7 +20,7 @@ export async function scheduleReminders() {
             if (delay > 0) {
                 const job = setTimeout(async () => {
                     console.log(`Eslatma yuborilmoqda: ${description}`);
-                    
+
                     let message = `⏰ *Eslatma:* ${description}`;
 
                     if (image_id) await sendPhoto(user_id, image_id, message);
